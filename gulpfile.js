@@ -10,8 +10,6 @@ var watch = require('gulp-watch');
 var debug = false;
 
 var paths = {
-  scripts: ['app/js/**/*.js', '!app/js/lib/**/*.js'],
-  images: 'app/img/**/*',
   less: {
   	src: 'app/less/*.less',
   	dest: 'app/css'
@@ -26,7 +24,7 @@ gulp.task('css', function() {
     var source = paths.less.src;
     var stream = gulp.src(source);
     if (debug) {
-        stream.pipe(watch(source));
+        stream = stream.pipe(watch(source));
     }
     return stream
         .pipe(less())
@@ -36,11 +34,11 @@ gulp.task('css', function() {
 
 gulp.task('html', function() {
     var source = paths.jade.src;
-    var steam = gulp.src(source);
+    var stream = gulp.src(source);
     if (debug) {
-        steam.pipe(watch(source));
+        stream = stream.pipe(watch(source));
     }
-    return steam
+    return stream
         .pipe(jade({ pretty: true }))
         .pipe(htmlmin())
         .pipe(gulp.dest(paths.jade.dest));
@@ -48,7 +46,9 @@ gulp.task('html', function() {
 
 // The default task (called when you run `gulp` from cli)
 gulp.task('default', ['css', 'html']);
+// Watch the files
 gulp.task('debug', function () {
     debug = true;
     gulp.start('default');
+    console.log("start watch");
 });

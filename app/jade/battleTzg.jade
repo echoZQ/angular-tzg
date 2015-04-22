@@ -1,0 +1,16 @@
+link(rel="stylesheet", href="../app/css/pk-with-cat.css")
+
+div(class="container")
+    div(id="battle")
+        include ./common/rules
+        div(class="top")
+            img(src="../app/img/pk-cat-bg.jpg", width="100%")
+            img(src="../app/img/cat-head.png", class="position top-head")
+            div(class="top-msg position")
+                img(src="../app/img/msg.png", width="100%")
+                div(class="msg-info")
+                    p 想要本钱？赢我，10M归你！
+            button(id="btn-start-game", ng-click="showPkPage();") 立即挑战
+        include ./common/footer
+    include ./common/pk
+

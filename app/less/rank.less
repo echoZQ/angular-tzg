@@ -1,0 +1,57 @@
+@import "reset";
+
+@red: #e54b4b;
+@red-dark: #5d1111;
+@yellow: #fffbd5;
+@yellow-light: #ffed45;
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    text-align: center;
+}
+tr {
+    &:nth-child(odd) {
+        background: @yellow;
+        td {
+            color: @red-dark;
+            &:nth-child(4) {
+                color: @red;
+            }
+        }
+        button {
+            background: @red;
+            color: @yellow;
+        }
+
+    }
+    &:nth-child(even) {
+        background: @red;
+        td {
+            color: @yellow;
+            &:nth-child(4) {
+                color: @yellow-light;
+            }
+        }
+        button {
+           background: @yellow;
+           color: @red;
+        }
+    }
+    &:last-child td {
+        padding: 10px 0;
+        letter-spacing: 1px;
+    }
+}
+td {
+    padding: 8px;
+    width: 21%;
+    &:first-child {
+        width: 16%;
+    }
+    button {
+        border: none;
+        border-radius: 30px;
+        padding: 4px 10px;
+    }
+}

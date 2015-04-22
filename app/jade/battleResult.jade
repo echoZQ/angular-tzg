@@ -1,0 +1,38 @@
+link(rel="stylesheet", href="../app/css/pk-result.css")
+
+include ./common/rules
+img(src="../app/img/logo.png", class="logo")
+div(class="top")
+    img(src="../app/img/pk-up.jpg", width="100%")
+    div(class="inner")
+        div(class="vs")
+            div(class="friend")
+                img(src="", width="60", class="pk-res", style="right: 44px; transform: rotate(-16deg); -webkit-transform: rotate(-16deg);")
+                img(src="", width="100", height="100", class="head")
+                img(src="../app/img/all-coins.png", width="100", style="position: absolute; right: 0px; bottom: -20px;")
+                div(class="nickname", style="right: 0;")
+            div(class="pk")
+                img(src="../app/img/vs.png", width="50")
+            div(class="me")
+                img(src="../app/img/out.png", width="60", class="pk-res", style="left: 44px; transform: rotate(16deg); -webkit-transform: rotate(16deg);")
+                img(src="", width="100", height="100", class="head")
+                img(src="../app/img/all-coins.png", width="100", style="position: absolute; left: 0px; bottom: -20px;")
+                div(class="nickname")
+                    span echo
+        div(class="window", style="background: url(../app/img/pk-result-win.png) no-repeat; background-size: 100% 100%;")
+            p 哼〜二年级的渣渣也想赢我？！
+            p 去跟你的小伙伴儿玩吧！
+        p(class="notice")
+            a(href="http://mp.weixin.qq.com/s?__biz=MzAxMjAxMTI4NQ==&mid=204335764&idx=1&sn=53e713e419cff00468998f629b25b13d#rd", style="text-decoration: underline;") 关注
+                span(style="font-size: 1.4rem;") “铜掌柜”
+                span 公众号即可领取10-20M流量！
+        div(class="btn-group")
+            button(class="share") 炫耀一下
+div(class="middle")
+    img(src="../app/img/pk-down.jpg", width="100%")
+//-战绩vs偷袭榜
+include ./common/list
+//-footer 兑换链接
+include ./common/footer
+div(class="mask")
+    img(src="../app/img/share.png")

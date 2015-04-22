@@ -1,0 +1,198 @@
+@import "reset";
+@import "rule";
+@import "pking";
+
+@red: #e54b4b;
+@yellow: #fffbd5;
+@yellow-light: #ffed45;
+@yellow-dark: #fecc51;
+@grey: #838987;
+
+a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+body {
+  background: @yellow;
+  height: auto;
+}
+img {
+  display: block;
+}
+ul li {
+  display: inline-block;
+}
+.position {
+  position: absolute;
+}
+.top {
+  position: relative;
+  .flow-num {
+    width: 60px;
+    height: 40px;
+    top: 70%;
+    left: 50%;
+    margin-left: 70px;
+    background: url("/app/activity/tzg/static/img/money-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  .btn-start-game {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 30px;
+    color: #000;
+    padding: 6px 0;
+    width: 160px;
+    bottom: 12px;
+    left: 50%;
+    margin-left: -80px;
+    background: @yellow-light;
+    letter-spacing: 1px;
+    font-size: 1.4rem;
+  }
+  .top-head {
+    width: 120px;
+    top: 50%;
+    left: 50%;
+    margin-left: -60px;
+    border-radius: 100px;
+  }
+  .top-msg {
+    width: 115px;
+    top: 46%;
+    left: 50%;
+    margin-left: -150px;
+    .msg-info {
+      position: absolute;
+      top: 0;
+      text-align: center;
+      padding: 27px 0 0 0;
+      width: 100px;
+      transform: rotate(-30deg);
+      -webkit-transform: rotate(-30deg);
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (min-width:370px) {
+    .top-head {
+      width: 146px;
+      margin-left: -78px;
+    }
+    .top-msg {
+      width: 140px;
+      margin-left: -180px;
+      .msg-info {
+        padding: 30px 10px 0 0;
+        width: 118px;
+      }
+    }
+    .flow-num {
+      width: 78px;
+      height: 45px;
+      margin-left: 80px;
+      line-height: 45px;
+    }
+  }
+}
+.middle {
+  position: relative;
+  margin-bottom: 2px;
+  .pk-with-sb {
+    position: absolute;
+    width: 260px;
+    height: 50px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -130px;
+    background: url("/app/activity/tzg/static/img/rank-bg.png") no-repeat;
+    background-size: 100% 100%;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+    vertical-align: top;
+    .nickname {
+      display: inline-block;
+      max-width: 70px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  @media screen and (min-width:370px) {
+    .pk-with-sb {
+      width: 320px;
+      height: 60px;
+      margin-left: -160px;
+      line-height: 45px;
+      .nickname {
+        max-width: 80px;
+      }
+    }
+  }
+}
+.go-to-pk {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+  button {
+    color: @red;
+  }
+  table {
+    width: 100%;
+    border-spacing: 0;
+    font-size: 1.4rem;
+    img {
+      border-radius: 100px;
+    }
+    tr {
+      td {
+        padding: 10px 0;
+        a {
+          padding: 6px 0;
+          width: 80px;
+          text-align: center;
+          text-decoration: none;
+          border-radius: 30px;
+          position: relative;
+          top: 4px;
+        }
+        &:first-child {
+          padding-left: 20px;
+          width: 40px;
+        }
+        &:last-child {
+          padding-right: 20px;
+          float: right;
+        }
+      }
+    }
+    tr:nth-child(odd) {
+      background: @red;
+      td {
+        color: @yellow;
+        a {
+          color: @red;
+          background: @yellow;
+        }
+      }
+    }
+    tr:nth-child(even) {
+      background: @yellow;
+      td {
+        color: @red;
+        a {
+          color: @yellow;
+          background: @red;
+        }
+      }
+    }
+  }
+}

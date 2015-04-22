@@ -1,0 +1,9 @@
+//-活动规则
+div(ng-controller="RulesCtrl")
+    div(class="rule", ng-click="showRules();") 活动规则
+    //-todo 延迟加载
+    div(class="rule-content", ng-show="showRulesFlag")
+        img(src="../app/img/rule-1.jpg", width="100%")
+        img(src="../app/img/rule-2.jpg", width="100%")
+        img(src="../app/img/rule-3.jpg", width="100%")
+        img(src="../app/img/rule-i-know.png", width="30%", ng-click="closeRules();")

@@ -1,0 +1,49 @@
+@import "reset";
+
+body {
+    background: url(/app/activity/tzg/static/img/exchange-success-bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
+.title {
+    width: 100%;
+}
+.mao {
+    position: absolute;
+    bottom: 65px;
+    z-index: 10;
+    left: 50%;
+    width: 260px;
+    margin-left: -130px;
+}
+@media screen and (max-width: 370px) {
+  .mao {
+    width: 200px;
+    margin-left: -100px;
+  }
+}
+@media screen and (max-width: 370px) and (max-height: 500px)  {
+  .title {
+    width: 88%;
+    display: block;
+    margin: auto;
+  }
+  .mao {
+    width: 160px;
+    margin-left: -80px;
+  }
+}
+.btn {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    margin-left: -70px;
+    display: block;
+    text-align: center;
+    width: 140px;
+    z-index: 10;
+}
+.grass {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

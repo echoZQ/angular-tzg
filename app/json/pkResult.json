@@ -1,0 +1,17 @@
+{
+    "win": false,
+    "flow": "10",
+    "fromUser": {
+        "avatar": "http://wx.qlogo.cn/mmopen/zia84NYIPfFbCokpYAYqlc4YYVxDYHAwsfBctXfmR9NeYAEfQfwKk7vdkWM6X2sLHVD6Slxnngho3Cl1odGcX6zHnibDxTs2fe/0",
+        "openId": "oYX2Ys4JchHDKYbxT2GOfH07Efqw",
+        "nickname": "妞妞",
+        "flow": "300"
+    }
+    ,
+    "targetUser": {
+        "avatar": "http://wx.qlogo.cn/mmopen/j8cooK2zCqoDl0o30eibfII5PCQlrkic50yQ3ABUWlYEuGayoNQLC9moDibpqKMePUfKcOXsRKu1Bq9Rejcfr2ibeA/0",
+        "openId": "oYX2Ys4rrwmZqQhV_HKD2mRumBj4",
+        "nickname": "朱朱",
+        "flow": "30"
+    }
+}

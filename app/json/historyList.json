@@ -1,0 +1,50 @@
+{
+    "attackList": [{
+        "avatar": "http://wx.qlogo.cn/mmopen/j8cooK2zCqoDl0o30eibfII5PCQlrkic50yQ3ABUWlYEuGayoNQLC9moDibpqKMePUfKcOXsRKu1Bq9Rejcfr2ibeA/0",
+        "nickname": "朱朱",
+        "createTime": "3-2 15:20",
+        "flow": "30",
+        "openId": "oYX2Ys4rrwmZqQhV_HKD2mRumBj4"
+    }, {
+        "avatar": "http://wx.qlogo.cn/mmopen/zia84NYIPfFbCokpYAYqlc4YYVxDYHAwsfBctXfmR9NeYAEfQfwKk7vdkWM6X2sLHVD6Slxnngho3Cl1odGcX6zHnibDxTs2fe/0",
+        "nickname": "妞妞",
+        "createTime": "3-2 15:20",
+        "flow": "40",
+        "openId": "oYX2Ys4JchHDKYbxT2GOfH07Efqw"
+    }, {
+        "avatar": "http://wx.qlogo.cn/mmopen/LHdtlaBo22etpUV3cXTeseOL6FuRGZPkyQ3XyH5r8JDTMnCuBwdxFEXJ0kY4icAN6lrET03ia18shHCrYwcbuJto3LoXGcE3rX/0",
+        "nickname": "小雨",
+        "createTime": "3-2 15:20",
+        "flow": "50",
+        "openId": "oYX2YsyCkHXfFWwI7enX2eO7DQhk"
+    }],
+    "battleList": [{
+        "avatar": "http://wx.qlogo.cn/mmopen/zia84NYIPfFbCokpYAYqlc4YYVxDYHAwsfBctXfmR9NeYAEfQfwKk7vdkWM6X2sLHVD6Slxnngho3Cl1odGcX6zHnibDxTs2fe/0",
+        "nickname": "妞妞",
+        "createTime": "3-2 15:20",
+        "flow": "40",
+        "openId": "oYX2Ys4JchHDKYbxT2GOfH07Efqw",
+        "win": true
+    }, {
+        "avatar": "http://wx.qlogo.cn/mmopen/LHdtlaBo22etpUV3cXTeseOL6FuRGZPkyQ3XyH5r8JDTMnCuBwdxFEXJ0kY4icAN6lrET03ia18shHCrYwcbuJto3LoXGcE3rX/0",
+        "nickname": "小雨",
+        "createTime": "3-2 15:20",
+        "flow": "50",
+        "openId": "oYX2YsyCkHXfFWwI7enX2eO7DQhk",
+        "win": false
+    }, {
+        "avatar": "http://wx.qlogo.cn/mmopen/LHdtlaBo22etpUV3cXTeseOL6FuRGZPkyQ3XyH5r8JDTMnCuBwdxFEXJ0kY4icAN6lrET03ia18shHCrYwcbuJto3LoXGcE3rX/0",
+        "nickname": "小雨",
+        "createTime": "3-2 15:20",
+        "flow": "50",
+        "openId": "oYX2YsyCkHXfFWwI7enX2eO7DQhk",
+        "win": false
+    }, {
+        "avatar": "",
+        "nickname": "铜猫大神",
+        "createTime": "3-2 15:20",
+        "flow": "100",
+        "openId": "tzg",
+        "win": true
+    }]
+}

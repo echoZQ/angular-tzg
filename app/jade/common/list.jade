@@ -1,10 +1,24 @@
-div(class="battle-me", style="margin-top: -25px;")
-    div(class="btn-touxi chosed") 谁偷袭了我
-    div(class="btn-zhanji") 我的战绩榜
-div(style="height: 20px; line-height: 20px; text-align: right; margin-right: 1.2rem;")
-    a(style="color: #199659; font-size: 1.5rem;font-weight: bold; display: inline-block; width: 11rem;" href="/action/doAction?r=tzg/award") 奔走相告奖>>
-footer
+footer(ng-controller="HistoryListCtrl")
+    div(class="battle-me")
+        div(class="btn-attack chosed", ng-click="changeRank('attack');") 谁偷袭了我
+        div(class="btn-battle", ng-click="changeRank('battle');") 我的战绩榜
     //-偷袭我的人
-    table(class="touxiRank")
+    table(class="attackRank", ng-show="rankListShowFlag")
+        tr(ng-repeat="list in attackList")
+            td
+                img(ng-src="{{list.avatar != '' ? list.avatar : '../app/img/default-head.png'}}", width="30", class="head")
+            td {{list.nickname}}
+            td {{list.createTime}}
+            td(style="min-width: 30px;") {{list.flow}}
+            td
+                a(href="#/battle{{list.openId}}") 报仇
     //-战绩榜
-    table(class="zhanjiRank" style="display: none;")
+    table(class="battelRank", ng-show="!rankListShowFlag")
+        tr(ng-repeat="list in battleList")
+            td
+                img(ng-src="{{list.avatar != '' ? list.avatar : '../app/img/default-head.png'; list.openId != 'tzg' ? list.avatar : '../app/img/cat-head.png'}}", width="30", class="head")
+            td {{list.nickname}}
+            td {{list.win}}
+            td(style="min-width: 30px;") {{list.flow}}
+            td
+                a(href="#/battle{{list.openId}}") 挑战它

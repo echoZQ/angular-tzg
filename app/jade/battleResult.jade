@@ -2,25 +2,27 @@ link(rel="stylesheet", href="../app/css/pk-result.css")
 
 include ./common/rules
 img(src="../app/img/logo.png", class="logo")
-div(class="top")
+div(class="top", ng-controller="PkResultCtrl")
     img(src="../app/img/pk-up.jpg", width="100%")
     div(class="inner")
         div(class="vs")
             div(class="friend")
-                img(src="", width="60", class="pk-res", style="right: 44px; transform: rotate(-16deg); -webkit-transform: rotate(-16deg);")
-                img(src="", width="100", height="100", class="head")
+                img(ng-src="{{win ? '../app/img/win.png' : '../app/img/out.png'}}", width="60", class="pk-res", style="right: 44px; transform: rotate(-16deg); -webkit-transform: rotate(-16deg);")
+                img(src="{{fromUser.avatar}}", width="100", height="100", class="head")
                 img(src="../app/img/all-coins.png", width="100", style="position: absolute; right: 0px; bottom: -20px;")
                 div(class="nickname", style="right: 0;")
+                    span {{fromUser.nickname}}
             div(class="pk")
                 img(src="../app/img/vs.png", width="50")
             div(class="me")
-                img(src="../app/img/out.png", width="60", class="pk-res", style="left: 44px; transform: rotate(16deg); -webkit-transform: rotate(16deg);")
-                img(src="", width="100", height="100", class="head")
+                img(src="{{!win ? '../app/img/win.png' : '../app/img/out.png'}}", width="60", class="pk-res", style="left: 44px; transform: rotate(16deg); -webkit-transform: rotate(16deg);")
+                img(src="{{targetUser.avatar}}", width="100", height="100", class="head")
                 img(src="../app/img/all-coins.png", width="100", style="position: absolute; left: 0px; bottom: -20px;")
                 div(class="nickname")
-                    span echo
-        div(class="window", style="background: url(../app/img/pk-result-win.png) no-repeat; background-size: 100% 100%;")
-            p 哼〜二年级的渣渣也想赢我？！
+                    span {{tagetUser.nickname}}
+        div(class="window", style="{{win ? 'background: url(../app/img/pk-result-win.png) no-repeat; background-size: 100% 100%;' : 'background: url(../app/img/out-window.png) no-repeat; background-size: 100% 100%;'}}")
+            //todo
+            p {{win ? '哼〜二年级的渣渣也想赢我？！' : targetUser.nickname}}
             p 去跟你的小伙伴儿玩吧！
         p(class="notice")
             a(href="http://mp.weixin.qq.com/s?__biz=MzAxMjAxMTI4NQ==&mid=204335764&idx=1&sn=53e713e419cff00468998f629b25b13d#rd", style="text-decoration: underline;") 关注
